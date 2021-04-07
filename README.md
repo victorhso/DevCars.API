@@ -21,5 +21,5 @@ Desenvolvida uma API REST completa de gerenciamento de vendas de carros durante 
  
 ## Projeto
 ![SWCar](https://user-images.githubusercontent.com/60578339/113944746-71559c00-97db-11eb-8b8e-bcd069c58bb3.PNG)
+![SWCust](https://user-images.githubusercontent.com/60578339/113945538-e2e21a00-97dc-11eb-818a-aa6f6613c134.PNG)
 
-![SWCust](https://user-images.githubusercontent.com/60578339/113944763-774b7d00-97db-11eb-90e1-e15e9926165b.PNG)
