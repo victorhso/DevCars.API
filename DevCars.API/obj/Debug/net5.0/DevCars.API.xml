@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevCars.API</name>
+    </assembly>
+    <members>
+        <member name="M:DevCars.API.Controllers.CarsController.Get">
+            <summary>
+            Pesquisar todos os carros
+            </summary>
+            <returns>Objeto retornado com sucesso</returns>
+            <response code="200">Objeto retornado om sucesso.</response>
+            <response code="404">Objeto não encontrado</response>
+            /// <response code="500">Ocorreu um erro interno</response>
+        </member>
+        <member name="M:DevCars.API.Controllers.CarsController.GetbyId(System.Int32)">
+            <summary>
+            Pesquisar um carro por seu identificador
+            </summary>
+            <remarks>
+            Requisição de exemplo:
+            { 
+                Id = 1 
+            }
+            </remarks>
+            <param name="id">Dados de um carro</param>
+            <returns>Objeto retornado com sucesso</returns>
+            <response code="200">Objeto retornado com sucesso</response>
+            <response code="404">Objeto não encontrado</response>
+        </member>
+        <member name="M:DevCars.API.Controllers.CarsController.Post(DevCars.API.InputModels.AddCarInputModel)">
+            <summary>
+            Cadastrar um carro
+            </summary>
+            <remarks>
+            Requisição de exemplo:
+            {
+                "Marca": "Chevrolet",
+                "Model": "Onix",
+                "vinCode": "ABC123",
+                "Ano": 2021,
+                "Preco": 10000,
+                "colorCar": "Branco",
+                "DataDe Producao": "2021-04-01"
+            }
+            </remarks>
+            <param name="model">Dados de um novo carro</param>
+            <returns>Objeto recém criado</returns>
+            <response code="201">Objeto criado com sucesso</response>
+            <response code="400">Objeto inválido</response>
+        </member>
+        <member name="M:DevCars.API.Controllers.CarsController.Put(System.Int32,DevCars.API.InputModels.UpdateCarInputModel)">
+            <summary>
+            Atualizar dados de um carro
+            </summary>
+            <remarks>
+            Requisição de Exemplo:
+            {
+                "Color": "Verde",
+                "Preco": 15000
+            }
+            </remarks>
+            <param name="id">Identificador de um carro</param>
+            <param name="model">Dados de alteração</param>
+            <returns>Não tem retorno</returns>
+            <response code="204">Atualização bem-sucedida</response>
+            <response code="400">Dados inválidos</response>
+            <response code="404">Carro não encontrado</response>
+        </member>
+        <member name="M:DevCars.API.Controllers.CarsController.Delete(System.Int32)">
+            <summary>
+            Deletar um carro
+            </summary>
+            <remarks>
+            Requisição de Exemplo:
+            {
+                "Id": 1
+            }
+            </remarks>
+            <param name="id">Identificador de um carro</param>
+            <returns></returns>
+            <response code="200">Objeto excluído com sucesso</response>
+            <response code="404">Objeto não encontrado</response>
+        </member>
+        <member name="M:DevCars.API.Controllers.CustomersController.Post(DevCars.API.InputModels.AddCustomerInputModel)">
+            <summary>
+            Cadastrar um cliente
+            </summary>
+            <remarks>
+            Requisição de exemplo:
+            {
+                "Nome": "João Silva",
+                "Documento": "12345678901",
+                "Aniversario": "01-01-2000",
+            }
+            </remarks>
+            <param name="model">Dados de um novo cliente</param>
+            <returns>Objeto recém criado</returns>
+            <response code="201">Objeto criado com sucesso</response>
+            <response code="400">Objeto inválido</response>
+        </member>
+        <member name="M:DevCars.API.Controllers.CustomersController.PostOrder(System.Int32,DevCars.API.InputModels.AddOrderInputModel)">
+            <summary>
+            Cadastrar um pedido para um cliente
+            </summary>
+            <remarks>
+            Requisição de exemplo:
+            {
+                "IdCar": 1,
+                "IdCustomer": 1,
+                "Descricao": "Teto solar",
+                "Preco": 5000,
+            }
+            </remarks>
+            <param name="model">Dados de um novo cliente</param>
+            <returns>Objeto recém criado</returns>
+            <response code="201">Objeto criado com sucesso</response>
+            <response code="400">Objeto inválido</response>
+        </member>
+        <member name="M:DevCars.API.Controllers.CustomersController.GetOrders(System.Int32,System.Int32)">
+            <summary>
+            Buscar pedido de um cliente com id carro
+            </summary>
+            <remarks>
+            Requisição de exemplo:
+            {
+                Id: 1
+                orderId: 1
+            }
+            </remarks>
+            <param name="model">Dados de um cliente e seu pedido</param>
+            <returns>Objeto recém criado</returns>
+            <response code="200">Objeto retornado com sucesso</response>
+            <response code="404">Objeto não encontrado</response>
+        </member>
+    </members>
+</doc>
