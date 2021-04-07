@@ -1,7 +1,7 @@
 # DevCars.API
 Desenvolvida uma API REST completa de gerenciamento de vendas de carros durante o bootcamp ASP.NET Core
 
-# Tecnologias e práticas utilizadas
+## Tecnologias e práticas utilizadas
 - ASP.NET Core com .NET 5
 - Entity Framework Core
 - Dapper
